@@ -1,0 +1,10 @@
+.login_container{                           /* Pour specifie qu'on change la class login_container en mettant un point devant */
+    width: 70%;                             /* On met une largeur de 70% */
+    background-color: #f5f5f5;            /* On met un background color de #f5f5f5 */
+    border: #000000 solid 1px;            /* On met une bordure de 1px de couleur noir en trait plein*/
+}
+
+.failed_message{
+    color: #ff0000;                       /* On met une couleur de rouge */
+    display: none;                          /* On cache le message */
+}

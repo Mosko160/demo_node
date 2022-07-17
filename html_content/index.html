@@ -1,0 +1,25 @@
+<!DOCTYPE html>                                                                 <!-- On specifie qu'on utilise un doctype html5 -->
+<html>                                                                          <!-- On cree une balise html -->
+    <head>                                                                      <!-- On cree une balise head c'est la qu'on met les fichiers externes et le code a executer au debut, l'utilisateur ne verra rien de ce qu'il y'a dans l'head-->
+        <script src="js/jquery-3.6.0.js"></script>                              <!-- On charge le fichier jquery qui est une librairie de google pour communiquer avec le server une fois la page chargee-->
+        <script src='js/index.js'></script>                                     <!-- On charge notre script -->
+        <link rel="stylesheet" href="css/index.css">                            <!-- On charge notre fichier css qui sert juste pour l'esthetisme-->
+        <title>Demo Node.JS</title>                                             <!-- On met un titre a notre page visible sur l'onglet de la page dans safari-->
+    </head>
+    <body>                                                                      <!-- On cree une balise body qui contient le contenu de la page que l'utilisateur verra-->
+        <center>                                                                <!-- On centre la page pour que le contenu soit au centre de la page-->
+            <h1>D&eacute;mo page de login interactive</h1>                      <!-- On met un titre (&eacute; = é oui html n'inclut pas les accents)-->
+            <div class="login_container">                                       <!-- On cree une div qui contient le formulaire de login et qui a une class pour pouvoir changer son esthetisme dans le fichier css-->
+                <p>Email :</p>                                                  <!-- On met un paragraphe pour dire que l'utilisateur doit entrer son email-->
+                <input type="text" id="email" />                                <!-- On cree un input qui contiendra l'email de l'utilisateur-->
+                <p>Password :</p>                                               <!-- On met un paragraphe pour dire que l'utilisateur doit entrer son password-->
+                <input type="password" id="password" />                         <!-- On cree un input qui contiendra le password de l'utilisateur-->
+                <br><br>                                                        <!-- On saute 2 lignes-->
+                <button onClick='login()'>Login</button>                        <!-- On cree un bouton qui appelle la fonction login-->
+                <br>
+                <h3 id="failed_connection_message" class="failed_message"></h3> <!-- On cree un h3 qui contiendra le message d'erreur-->
+                <br>
+            </div>
+        </center>
+    </body>
+</html>
